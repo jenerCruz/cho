@@ -1,0 +1,37 @@
+/* Estilos para edges */
+.animated-edge {
+  stroke: #555;
+  stroke-width: 2;
+  transition: stroke 0.3s ease;
+}
+
+.animated-edge:hover {
+  stroke: #222;
+  stroke-width: 3;
+}
+
+.edge-label {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #666;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Animación de líneas */
+@keyframes flowAnimation {
+  0% {
+    stroke-dashoffset: 500;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animated-edge {
+  stroke-dasharray: 5, 5;
+  animation: flowAnimation 0.5s linear infinite;
+}

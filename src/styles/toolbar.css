@@ -1,0 +1,147 @@
+/* Estilos de la barra de herramientas */
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 16px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  min-height: 60px;
+  flex-wrap: wrap;
+}
+
+.toolbar-left {
+  flex: 1;
+  min-width: 200px;
+}
+
+.workflow-name-input {
+  width: 100%;
+  max-width: 300px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.workflow-name-input:focus {
+  outline: none;
+  border-color: #4e7cff;
+  box-shadow: 0 0 0 3px rgba(78, 124, 255, 0.1);
+}
+
+.toolbar-center {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 16px;
+}
+
+.node-count {
+  font-size: 12px;
+  color: #888;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.toolbar-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: white;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.toolbar-btn:hover:not(:disabled) {
+  border-color: #999;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  background: #fafbfc;
+}
+
+.toolbar-btn:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.toolbar-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.toolbar-btn svg {
+  font-size: 13px;
+}
+
+/* Botones de colores específicos */
+.credentials-btn {
+  border-color: #6c757d;
+  color: #6c757d;
+}
+
+.credentials-btn:hover:not(:disabled) {
+  border-color: #495057;
+  color: #495057;
+}
+
+.validate-btn {
+  border-color: #ff9f43;
+  color: #ff9f43;
+}
+
+.validate-btn:hover:not(:disabled) {
+  background: #fff8f0;
+}
+
+.code-btn {
+  border-color: #a855f7;
+  color: #a855f7;
+}
+
+.code-btn:hover:not(:disabled) {
+  background: #faf5ff;
+}
+
+.execute-btn {
+  border-color: #4e7cff;
+  color: #4e7cff;
+}
+
+.execute-btn:hover:not(:disabled) {
+  background: #f0f4ff;
+}
+
+.save-btn {
+  border-color: #00a870;
+  color: #00a870;
+}
+
+.save-btn:hover:not(:disabled) {
+  background: #f0fff7;
+}
+
+.reset-btn {
+  border-color: #ef4444;
+  color: #ef4444;
+}
+
+.reset-btn:hover:not(:disabled) {
+  background: #fef2f2;
+}

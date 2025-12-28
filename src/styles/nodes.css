@@ -1,0 +1,177 @@
+/* Estilos de nodos - Diseño n8n profesional */
+.workflow-node {
+  border-radius: 6px;
+  padding: 12px;
+  min-width: 220px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.2s ease;
+  border: 1px solid;
+  background: white;
+  font-size: 13px;
+}
+
+.workflow-node:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translateY(-1px);
+}
+
+.workflow-node.selected {
+  box-shadow: 0 0 0 2px white, 0 0 0 4px currentColor;
+}
+
+.node-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #222;
+}
+
+.node-icon {
+  font-size: 14px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+
+.node-title {
+  flex: 1;
+  word-break: break-word;
+  font-weight: 500;
+}
+
+.node-description {
+  font-size: 11px;
+  color: #888;
+  margin: 4px 0;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.node-config {
+  background: #f5f6f7;
+  border-radius: 4px;
+  padding: 8px;
+  margin-top: 8px;
+  font-size: 11px;
+  border: 1px solid #e5e7eb;
+}
+
+.config-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 4px 0;
+  gap: 8px;
+}
+
+.config-key {
+  font-weight: 600;
+  color: #555;
+}
+
+.config-value {
+  color: #777;
+  word-break: break-word;
+  text-align: right;
+  flex: 1;
+}
+
+.node-code {
+  background: #282c34;
+  border-radius: 4px;
+  padding: 8px;
+  margin-top: 8px;
+  border: 1px solid #3e4451;
+}
+
+.code-preview {
+  color: #abb2bf;
+  font-size: 10px;
+  margin: 0;
+  word-break: break-all;
+  white-space: pre-wrap;
+  font-family: 'Courier New', monospace;
+}
+
+/* Tipos específicos de nodos */
+.trigger-node {
+  border-color: #4e7cff;
+  background: linear-gradient(135deg, #f0f4ff 0%, #ffffff 100%);
+}
+
+.trigger-node .node-icon {
+  background: #e6ecff;
+  color: #4e7cff;
+}
+
+.action-node {
+  border-color: #00a870;
+  background: linear-gradient(135deg, #f0fff7 0%, #ffffff 100%);
+}
+
+.action-node .node-icon {
+  background: #e0fdf0;
+  color: #00a870;
+}
+
+.conditional-node {
+  border-color: #ff9f43;
+  background: linear-gradient(135deg, #fff8f0 0%, #ffffff 100%);
+}
+
+.conditional-node .node-icon {
+  background: #ffe8d0;
+  color: #ff9f43;
+}
+
+.script-node {
+  border-color: #a855f7;
+  background: linear-gradient(135deg, #faf5ff 0%, #ffffff 100%);
+}
+
+.script-node .node-icon {
+  background: #f3e8ff;
+  color: #a855f7;
+}
+
+.ai-node {
+  border-color: #3b82f6;
+  background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%);
+}
+
+.ai-node .node-icon {
+  background: #dbeafe;
+  color: #3b82f6;
+}
+
+.output-node {
+  border-color: #ef4444;
+  background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+}
+
+.output-node .node-icon {
+  background: #fee2e2;
+  color: #ef4444;
+}
+
+.handles-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.handle-label {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #666;
+}

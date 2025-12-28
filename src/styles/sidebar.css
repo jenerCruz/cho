@@ -1,0 +1,151 @@
+/* Estilos del Sidebar - Diseño n8n */
+.sidebar {
+  width: 280px;
+  background: white;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 1px 0 2px rgba(0, 0, 0, 0.08);
+}
+
+.sidebar-header {
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.sidebar-header h2 {
+  margin: 0 0 6px;
+  font-size: 14px;
+  color: #222;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sidebar-subtitle {
+  margin: 0;
+  font-size: 11px;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.sidebar-content {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+}
+
+.node-category {
+  margin-bottom: 20px;
+}
+
+.category-title {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #999;
+  margin: 0 0 10px;
+  padding: 0 8px;
+  letter-spacing: 0.5px;
+}
+
+.node-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.node-item {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background: #fafbfc;
+  border: 1px solid #e5e7eb;
+  cursor: grab;
+  transition: all 0.2s ease;
+  user-select: none;
+  max-width: 240px;
+}
+
+.node-item:hover {
+  border-color: #ccc;
+  background: #f5f6f7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.node-item:active {
+  cursor: grabbing;
+  background: #eee;
+  transform: scale(0.98);
+}
+
+.node-item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+/* Colores por tipo */
+.node-item-trigger .node-item-icon {
+  background: #e6ecff;
+  color: #4e7cff;
+}
+
+.node-item-action .node-item-icon {
+  background: #e0fdf0;
+  color: #00a870;
+}
+
+.node-item-conditional .node-item-icon {
+  background: #ffe8d0;
+  color: #ff9f43;
+}
+
+.node-item-script .node-item-icon {
+  background: #f3e8ff;
+  color: #a855f7;
+}
+
+.node-item-ai .node-item-icon {
+  background: #dbeafe;
+  color: #3b82f6;
+}
+
+.node-item-output .node-item-icon {
+  background: #fee2e2;
+  color: #ef4444;
+}
+
+.node-item-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.node-item-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #222;
+  word-break: break-word;
+}
+
+.node-item-description {
+  font-size: 10px;
+  color: #888;
+  word-break: break-word;
+  line-height: 1.3;
+}

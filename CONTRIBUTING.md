@@ -4,13 +4,53 @@ Bienvenido! Esta guía te ayudará a continuar desarrollando el Workflow Editor.
 
 ## 📋 Tabla de Contenidos
 
-1. [Arquitectura](#arquitectura)
-2. [Crear Nuevos Nodos](#crear-nuevos-nodos)
-3. [Sistema de Credenciales](#sistema-de-credenciales)
-4. [Integración de APIs](#integración-de-apis)
-5. [Generación de Código](#generación-de-código)
-6. [Testing](#testing)
-7. [Deployment](#deployment)
+1. [Primeros Pasos](#primeros-pasos)
+2. [Arquitectura](#arquitectura)
+3. [Crear Nuevos Nodos](#crear-nuevos-nodos)
+4. [Sistema de Credenciales](#sistema-de-credenciales)
+5. [Integración de APIs](#integración-de-apis)
+6. [Generación de Código](#generación-de-código)
+7. [Testing](#testing)
+8. [Deployment](#deployment)
+
+---
+
+## 🚀 Primeros Pasos
+
+### Instalación del Proyecto
+
+```bash
+# 1. Clonar el repositorio (si es necesario)
+git clone <repo-url>
+cd cho
+
+# 2. Instalar dependencias
+npm install
+
+# 3. Crear archivo .env con tus API keys (ver .env.example)
+cp .env.example .env
+# Editar .env y agregar tus claves de API
+
+# 4. Iniciar servidor de desarrollo
+npm run dev
+# El app estará disponible en http://localhost:5173
+```
+
+### Build para Producción
+
+```bash
+# Compilar y generar dist/
+npm run build
+
+# Probar el build localmente
+npm run preview
+```
+
+### Requisitos Previos
+
+- **Node.js** 18+ 
+- **npm** 9+
+- Cuentas de API (OpenAI, Google, Mistral, etc.) - ver [.env.example](./.env.example)
 
 ---
 
